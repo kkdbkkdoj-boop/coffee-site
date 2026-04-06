@@ -1,83 +1,71 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luxury Saudi Coffee</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f5f5f5;
-            color: #333;
-        }
-        .hero {
-            background: url('hero-image.jpg') no-repeat center center/cover;
-            height: 80vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: gold;
-            text-shadow: 1px 1px 2px black;
-        }
-        .services {
-            display: flex;
-            justify-content: space-around;
-            margin: 20px 0;
-        }
-        .service-card {
-            background: white;
-            border: 1px solid gold;
-            border-radius: 8px;
-            padding: 20px;
-            width: 30%;
-            text-align: center;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <header class="hero">
-        <h1>تجربة القهوة السعودية الفاخرة</h1>
-    </header>
-
-    <section class="value-proposition">
-        <h2>لماذا تختارنا؟</h2>
-        <p>نقدم لك أشهى أنواع القهوة بأعلى جودة وبأذواق مبتكرة.</p>
-    </section>
-
-    <section class="services">
-        <div class="service-card">
-            <h3>القهوة التقليدية</h3>
-            <p>تجربة قهوة سعودية تقليدية لا تُنسى.</p>
-        </div>
-        <div class="service-card">
-            <h3>الاستشارات</h3>
-            <p>نقدم استشارات مخصصة في صناعة القهوة.</p>
-        </div>
-        <div class="service-card">
-            <h3>التوريد</h3>
-            <p>توريد أفضل حبوب القهوة المتميزة.</p>
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Experience Luxury with Saudi Coffee</h1>
+            <button class="shimmer-button">Order Now</button>
         </div>
     </section>
 
-    <section class="gallery">
-        <h2>معرض الصور</h2>
-        <div>
-            <img src="coffee1.jpg" alt="Coffee1" />
-            <img src="coffee2.jpg" alt="Coffee2" />
+    <!-- Value Proposition Cards -->
+    <section id="value-proposition">
+        <div class="card">
+            <h2>Quality</h2>
+            <p>We source the finest beans from the heart of Saudi Arabia.</p>
+        </div>
+        <div class="card">
+            <h2>Sustainability</h2>
+            <p>Ethically crafted, ensuring a sustainable future.</p>
+        </div>
+        <div class="card">
+            <h2>Community</h2>
+            <p>Supporting local farmers and their families.</p>
         </div>
     </section>
 
-    <footer>
-        <p>اتصل بنا عبر WhatsApp: <a href="https://wa.me/12345678910">تواصل الآن</a></p>
-    </footer>
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <h3>WhatsApp Integration</h3>
+            <p>Connect with us instantly for orders and queries via WhatsApp.</p>
+            <a href="https://wa.me/YOUR_NUMBER" class="whatsapp-link">Chat on WhatsApp</a>
+        </div>
+        <div class="service">
+            <h3>Customized Orders</h3>
+            <p>Personalize your coffee experience with custom blends.</p>
+        </div>
+    </section>
 
+    <!-- Masonry Gallery -->
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="masonry">
+            <img src="image1.jpg" alt="Coffee Image 1">
+            <img src="image2.jpg" alt="Coffee Image 2">
+            <img src="image3.jpg" alt="Coffee Image 3">
+            <!-- Add more images as needed -->
+        </div>
+    </section>
+
+    <!-- Dynamic QR Code -->
+    <section id="qr-code">
+        <h2>Scan for Offers</h2>
+        <img src="https://api.qrserver.com/v1/create-qr-code/?data=YOUR_URL" alt="Dynamic QR Code">
+    </section>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/YOUR_NUMBER" class="floating-whatsapp-button">💬</a>
+
+    <script src="script.js"></script>
 </body>
 </html>
